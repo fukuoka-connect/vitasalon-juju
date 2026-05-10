@@ -503,6 +503,9 @@ a{color:inherit;text-decoration:none}
 /* ============ Reveal ============ */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.25,.46,.45,.94),transform .9s cubic-bezier(.25,.46,.45,.94)}
 .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none}
+}
 
 /* ============ Tablet ============ */
 @media(min-width:680px){
