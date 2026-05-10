@@ -105,8 +105,10 @@ a{color:inherit;text-decoration:none}
   min-height:100vh;
   padding:140px 28px 100px;
   background:
+    linear-gradient(105deg, var(--bg) 0%, rgba(251,246,242,.92) 45%, rgba(251,246,242,.55) 100%),
     radial-gradient(ellipse at 80% 10%, rgba(212,165,160,.18) 0%, transparent 55%),
     radial-gradient(ellipse at 10% 90%, rgba(232,212,176,.22) 0%, transparent 50%),
+    url('assets/images/hero-01-room.jpg') center right/cover no-repeat,
     var(--bg);
   overflow:hidden;
 }
@@ -370,6 +372,27 @@ a{color:inherit;text-decoration:none}
   font-size:11px;letter-spacing:.25em;color:var(--rose-deep);
   border:1px solid var(--rose-deep);padding:4px 12px;margin-top:18px;
 }
+.s-item__photo{
+  width:100%;aspect-ratio:4/3;object-fit:cover;
+  margin-bottom:24px;
+  filter:saturate(.92) contrast(.96);
+  box-shadow:0 18px 44px -22px rgba(90,70,64,.35);
+}
+
+/* ============ Decorative floats ============ */
+.deco-float{
+  position:absolute;pointer-events:none;user-select:none;
+  z-index:1;
+}
+.deco-float--rose{
+  top:-40px;right:-40px;width:200px;opacity:.42;transform:rotate(12deg);
+}
+.deco-float--leaf{
+  bottom:-30px;left:-50px;width:220px;opacity:.55;transform:rotate(-22deg);
+}
+.deco-float--rose-cta{
+  top:40px;left:-30px;width:170px;opacity:.5;transform:rotate(-14deg);
+}
 
 /* ============ VOICE ============ */
 .voice{
@@ -512,8 +535,12 @@ a{color:inherit;text-decoration:none}
   .duo{grid-template-columns:1fr 1fr;gap:30px;align-items:start}
   .duo__cross{display:none}
   .duo__card:nth-child(2){margin-top:32px}
-  .s-item{grid-template-columns:140px 1fr;gap:40px;align-items:start}
+  .s-item{grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
+  .s-item:nth-child(even){grid-template-columns:1.1fr 1fr}
   .s-item:nth-child(even) .s-item__no{padding-left:0}
+  .s-item:nth-child(even) .s-item__media{order:2}
+  .s-item__media{display:flex;flex-direction:column}
+  .s-item__no{font-size:78px;margin-bottom:18px}
   .diff-row{font-size:14px}
 }
 @media(min-width:1024px){
@@ -553,6 +580,7 @@ a{color:inherit;text-decoration:none}
 
 <!-- ============ PROBLEM ============ -->
 <section class="problem">
+  <img class="deco-float deco-float--rose" src="assets/images/deco-01-rose.png" alt="" aria-hidden="true">
   <div class="problem__bg" aria-hidden="true">Why?</div>
   <div class="problem__inner">
     <p class="problem__overline reveal">— Section 01 / Empathy</p>
@@ -656,7 +684,10 @@ a{color:inherit;text-decoration:none}
     </div>
 
     <article class="s-item reveal">
-      <div class="s-item__no">01<small>SAFETY</small></div>
+      <div class="s-item__media">
+        <div class="s-item__no">01<small>SAFETY</small></div>
+        <img class="s-item__photo" src="assets/images/pillar-01-medical.jpg" alt="医療連携を象徴する診察デスク" loading="lazy">
+      </div>
       <div>
         <h3 class="s-item__title">医療連携<span class="sm">による</span>セーフティネット</h3>
         <p class="s-item__text">
@@ -667,7 +698,10 @@ a{color:inherit;text-decoration:none}
     </article>
 
     <article class="s-item reveal">
-      <div class="s-item__no">02<small>MACHINE</small></div>
+      <div class="s-item__media">
+        <div class="s-item__no">02<small>MACHINE</small></div>
+        <img class="s-item__photo" src="assets/images/pillar-02-machine.jpg" alt="プロが選び抜いた本格痩身機器" loading="lazy">
+      </div>
       <div>
         <h3 class="s-item__title">プロ<span class="sm">が</span>選び抜いた本格機器</h3>
         <p class="s-item__text">
@@ -678,7 +712,10 @@ a{color:inherit;text-decoration:none}
     </article>
 
     <article class="s-item reveal">
-      <div class="s-item__no">03<small>METHOD</small></div>
+      <div class="s-item__media">
+        <div class="s-item__no">03<small>METHOD</small></div>
+        <img class="s-item__photo" src="assets/images/pillar-03-method.jpg" alt="個別カウンセリングのデスク" loading="lazy">
+      </div>
       <div>
         <h3 class="s-item__title">個別カウンセリング × 結果コミット型</h3>
         <p class="s-item__text">
@@ -722,6 +759,8 @@ a{color:inherit;text-decoration:none}
 
 <!-- ============ CTA ============ -->
 <section class="cta" id="cta">
+  <img class="deco-float deco-float--leaf" src="assets/images/deco-02-leaf.png" alt="" aria-hidden="true">
+  <img class="deco-float deco-float--rose-cta" src="assets/images/deco-01-rose.png" alt="" aria-hidden="true">
   <div class="cta__bgkanji" aria-hidden="true">答</div>
   <div class="cta__inner">
     <p class="cta__overline">— Last Section / For You</p>
