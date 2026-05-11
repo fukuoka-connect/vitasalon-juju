@@ -106,3 +106,66 @@ Delicate hand-drawn line-art illustration of a slender botanical leaf branch (si
   - `imagen-4-ultra` → `models/imagen-4.0-ultra-generate-001`
 - Claude Code 再起動でMCPサーバー反映 → 同プロンプトでリトライすれば即生成可能
 - 直接curlで叩いた際は無料プラン扱いの404が出たため、有料プラン紐付けキーが環境にあるか要確認
+
+---
+
+# v2.0 リスキン版プロンプト（道場系・本気トーン）
+
+- 生成日: 2026-05-10
+- カラーパレット: マットブラック `#0e0e0e` × ダークグレー `#1a1a1a` × クリムゾン `#c0182c` × アスファルトグレー `#9aa0a4`
+- スタイル: 高コントラスト・ストイック・硬質・燃える決意。マッスル系／道場系の本気。
+- 共通ネガティブ: 顔・テキスト・ロゴ・パステル・rose系・cream系・ふんわり光・低彩度のニュートラル背景
+- 保存先: `assets/images/v2/`
+
+## 共通スタイル指示
+> High-contrast editorial photograph for a serious slimming "dojo" (training-style salon). Matte black (#0e0e0e) and dark graphite (#1a1a1a) base, crimson red (#c0182c) rim-light or filament accents, asphalt silver (#9aa0a4) hardware tones. No people's faces, no text, no logos. Dramatic side light, hard shadows, cinematic, gritty premium. Strictly NO pastel, NO rose pink, NO cream beige.
+
+---
+
+### 1. hero-v2-body.jpg（FV）
+- aspect: `4:5` / format: `image/jpeg` / person_generation: `allow_adult` （顔なし）
+- 用途: `.hero__visual` メイン
+- prompt:
+```
+Cinematic editorial portrait from behind, no face visible: a toned athletic Japanese woman silhouette standing in a dark training-style beauty studio. Back muscles defined, sports bra and high-waist black leggings, hair tied up tight. Matte black walls (#0e0e0e), single crimson red rim-light (#c0182c) catching the spine and shoulder edge, asphalt silver (#9aa0a4) metallic floor reflection. Hard side light, deep shadows, dramatic high contrast, cinematic. No face, no text, no logos. Photorealistic, gritty premium, sense of disciplined resolve. Strictly NO pastel, NO rose, NO cream.
+```
+
+### 2. core-v2-machine.jpg（CORE 二刀流）
+- aspect: `16:9` / format: `image/jpeg`
+- 用途: `.core__hero-figure` 機器ヘッドのドラマチッククローズアップ
+- prompt:
+```
+Dramatic close-up macro photograph of a professional high-end beauty slimming machine handpiece, brushed metal body with crimson red (#c0182c) filament glow lines along seams, asphalt silver (#9aa0a4) curves catching a hard rim light against a pitch black (#0e0e0e) background. Cool industrial product photography, cinematic single light source from the upper right, deep shadow falloff, magazine cover quality. No text, no logos, no people. Photorealistic, ultra-sharp focus on the handpiece tip, premium serious tone. Strictly NO pastel, NO cream, NO rose.
+```
+
+### 3. pillar-discipline.jpg（DISCIPLINE 規律）
+- aspect: `4:3` / format: `image/jpeg`
+- prompt:
+```
+Top-down editorial photograph on matte black surface (#0e0e0e): a tightly coiled tailor's measuring tape with crimson red (#c0182c) numbering, a single heavy black iron weight plate, a stark stopwatch with red second hand, all arranged with rigid geometric precision. Hard directional light from upper-left, sharp specular highlights on metal, deep shadows, asphalt silver (#9aa0a4) accents. No text, no logos, no people. Photorealistic, disciplined, strict, masculine-leaning premium aesthetic for a slimming training dojo. Strictly NO pastel, NO rose, NO cream, NO soft light.
+```
+
+### 4. pillar-weapon.jpg（WEAPON 武器）
+- aspect: `4:3` / format: `image/jpeg`
+- prompt:
+```
+Ultra macro close-up of a single beauty slimming machine head, treated like a weapon: brushed gunmetal and asphalt silver (#9aa0a4) surface, crimson red (#c0182c) reflection lines on the curved edge, dripping condensation of cold metal, black void background (#0e0e0e). Hard rim light, knife-edge specular highlights, deep matte shadows. No text, no logos, no people. Photorealistic product macro, intimidating premium tool aesthetic. Strictly NO pastel, NO cream.
+```
+
+### 5. pillar-protocol.jpg（PROTOCOL プロトコル）
+- aspect: `4:3` / format: `image/jpeg`
+- prompt:
+```
+Top-down editorial photograph: a sheet of dense handwritten training-and-treatment protocol on white paper with dates and numbers in black ink and crimson red (#c0182c) marker corrections, a black mechanical pencil with crimson grip, a black metal clipboard edge, all laid on a dark graphite surface (#1a1a1a). Hard side light, high contrast, sharp paper grain visible. No legible brand text, no logos, no people. Photorealistic, serious commitment-document aesthetic, sense of a 30-day battle plan. Strictly NO pastel, NO rose, NO cream.
+```
+
+## ステータス（v2.0）
+| # | ファイル | ステータス |
+|---|---|---|
+| 1 | v2/hero-v2-body.jpg | ⏳ ソラ生成中 |
+| 2 | v2/core-v2-machine.jpg | ⏳ ソラ生成中 |
+| 3 | v2/pillar-discipline.jpg | ⏳ ソラ生成中 |
+| 4 | v2/pillar-weapon.jpg | ⏳ ソラ生成中 |
+| 5 | v2/pillar-protocol.jpg | ⏳ ソラ生成中 |
+
+v1画像は `claude-pre-delete/v1-images/` に退避済。
