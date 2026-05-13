@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VITA SALON JuJu｜結果以外、いらない。｜福岡・天神</title>
+<meta name="description" content="医療提携 × 機器販売代理店。プロが選び抜いた本格痩身、結果コミット型。「他で結果が出なかった」方への、最後の道場。初回カウンセリング無料。">
+<link rel="canonical" href="https://fukuoka-connect.github.io/vitasalon-juju/v2/">
+<meta property="og:title" content="VITA SALON JuJu｜結果以外、いらない。">
+<meta property="og:description" content="医療提携 × 機器販売代理店。プロ仕様の本格痩身、結果コミット型。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fukuoka-connect.github.io/vitasalon-juju/v2/">
+<meta property="og:image" content="https://fukuoka-connect.github.io/vitasalon-juju/assets/images/v2/hero-v2-body.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#0a0a0a; --bg2:#141414; --bg3:#1c1c1c;
+  --ink:#f5f5f5; --mu:#8a8a8a; --line:#2a2a2a;
+  --red:#c0182c; --red-glow:#e23a4a; --silver:#9aa0a4;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.7;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+.os{font-family:'Oswald',sans-serif; letter-spacing:.08em}
+.sm{font-size:.78em}
+a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block}
+.container{width:90%; max-width:980px; margin:0 auto}
+
+/* ===== NAV ===== */
+.nav{position:fixed; top:0; left:0; right:0; z-index:100; padding:16px 5%;
+  background:rgba(10,10,10,.85); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line)}
+.nav-inner{display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto}
+.nav-brand{font-family:'Oswald',sans-serif; font-weight:700; font-size:1.1rem; letter-spacing:.18em; color:var(--ink)}
+.nav-brand em{color:var(--red); font-style:normal}
+.nav-cta{font-family:'Oswald',sans-serif; font-size:.78rem; letter-spacing:.16em; padding:10px 22px;
+  border:1px solid var(--red); color:var(--red); transition:all .22s var(--ease)}
+.nav-cta:hover{background:var(--red); color:#fff}
+
+/* ===== HERO ===== */
+.hero{position:relative; min-height:100vh; padding:140px 0 100px;
+  display:flex; align-items:center; overflow:hidden}
+.hero::before{content:''; position:absolute; inset:0; z-index:0;
+  background:
+    linear-gradient(180deg, rgba(10,10,10,.4) 0%, rgba(10,10,10,.85) 100%),
+    url(../assets/images/v2/hero-v2-body.jpg) center/cover}
+.hero::after{content:''; position:absolute; top:0; right:-10%; width:60%; height:100%;
+  background:radial-gradient(circle at 70% 30%, rgba(192,24,44,.25), transparent 50%); z-index:0}
+.hero-inner{position:relative; z-index:2}
+.hero-tag{font-family:'Oswald',sans-serif; font-size:.85rem; color:var(--red);
+  letter-spacing:.32em; margin-bottom:28px; display:flex; gap:14px; align-items:center}
+.hero-tag::before{content:''; display:block; width:36px; height:2px; background:var(--red)}
+.hero-h1{font-weight:900; font-size:clamp(2.4rem,7.5vw,5.2rem); line-height:1.15;
+  letter-spacing:-.02em; margin-bottom:32px}
+.hero-h1 .line-2{color:var(--red); display:block; margin-top:.1em}
+.hero-h1 .line-2::after{content:''; display:inline-block; width:8px; height:8px;
+  background:var(--red); margin-left:8px; vertical-align:middle}
+.hero-sub{font-size:clamp(1rem,2vw,1.15rem); color:var(--silver);
+  max-width:560px; margin-bottom:40px; line-height:1.9}
+.hero-sub strong{color:var(--ink); font-weight:700}
+.hero-meta{display:flex; flex-wrap:wrap; gap:18px; margin-bottom:48px}
+.hero-meta-item{font-family:'Oswald',sans-serif; font-size:.72rem;
+  border:1px solid var(--line); padding:8px 16px; letter-spacing:.14em; color:var(--silver)}
+.hero-meta-item em{color:var(--red); font-style:normal; margin-right:6px}
+.hero-cta-group{display:flex; gap:14px; flex-wrap:wrap}
+.btn-primary{display:inline-flex; align-items:center; gap:12px;
+  padding:20px 40px; background:var(--red); color:#fff;
+  font-family:'Oswald',sans-serif; font-weight:600; font-size:1rem; letter-spacing:.18em;
+  transition:all .22s var(--ease); cursor:pointer; border:none}
+.btn-primary:hover{background:var(--red-glow); transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(192,24,44,.4)}
+.btn-secondary{display:inline-flex; align-items:center; gap:10px;
+  padding:20px 36px; background:transparent; color:var(--ink);
+  border:1px solid var(--silver); font-family:'Oswald',sans-serif; font-size:.95rem; letter-spacing:.16em;
+  transition:all .22s var(--ease)}
+.btn-secondary:hover{border-color:var(--ink); background:rgba(255,255,255,.05)}
+.hero-scarcity{margin-top:32px; font-size:.78rem; color:var(--mu); letter-spacing:.1em}
+.hero-scarcity em{color:var(--red); font-style:normal; font-weight:700}
+
+/* ===== SECTION COMMON ===== */
+section{padding:120px 0; position:relative}
+.sect-num{font-family:'Oswald',sans-serif; font-size:.82rem; letter-spacing:.32em;
+  color:var(--red); margin-bottom:20px; display:flex; gap:14px; align-items:center}
+.sect-num::before{content:''; display:block; width:36px; height:2px; background:var(--red)}
+.sect-title{font-weight:900; font-size:clamp(1.8rem,4.5vw,2.8rem); line-height:1.4;
+  margin-bottom:48px; letter-spacing:-.01em}
+.sect-title em{color:var(--red); font-style:normal}
+
+/* ===== EMPATHY ===== */
+#empathy{background:var(--bg)}
+#empathy .grid{display:grid; gap:24px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.emp-card{background:var(--bg2); padding:36px 32px; border-left:3px solid var(--line);
+  transition:border-left-color .3s var(--ease)}
+.emp-card:hover{border-left-color:var(--red)}
+.emp-card-num{font-family:'Oswald',sans-serif; font-size:.78rem; letter-spacing:.2em;
+  color:var(--silver); margin-bottom:18px}
+.emp-card-num em{color:var(--red); font-style:normal; font-weight:700; font-size:1.4em}
+.emp-card-title{font-weight:900; font-size:1.18rem; margin-bottom:14px; line-height:1.5}
+.emp-card-text{font-size:.94rem; color:var(--mu); line-height:1.85}
+.emp-quote{text-align:center; margin-top:64px; font-weight:700; font-size:clamp(1.1rem,2.5vw,1.4rem);
+  color:var(--silver); padding:32px 24px; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+
+/* ===== WHY (Dual Positioning) ===== */
+#why{background:var(--bg2); position:relative; overflow:hidden}
+#why::before{content:'×'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(15rem,30vw,28rem);
+  color:rgba(192,24,44,.04); line-height:1; z-index:0; user-select:none}
+#why .container{position:relative; z-index:2}
+.dual{display:grid; gap:24px; grid-template-columns:1fr 60px 1fr; align-items:center; margin-top:48px}
+.dual-card{background:var(--bg3); padding:48px 36px; border:1px solid var(--line); position:relative}
+.dual-card::before{content:''; position:absolute; top:0; left:0; width:60px; height:3px; background:var(--red)}
+.dual-tag{font-family:'Oswald',sans-serif; font-size:.72rem; letter-spacing:.22em;
+  color:var(--silver); margin-bottom:14px}
+.dual-title{font-weight:900; font-size:1.35rem; margin-bottom:18px; line-height:1.5}
+.dual-text{font-size:.92rem; color:var(--mu); line-height:1.9}
+.dual-x{font-family:'Oswald',sans-serif; font-size:3rem; font-weight:300; color:var(--red); text-align:center}
+@media (max-width:768px){.dual{grid-template-columns:1fr; gap:16px} .dual-x{padding:8px 0}}
+
+.diff{margin-top:64px; padding:48px 36px; background:var(--bg3); border:1px solid var(--line)}
+.diff-title{font-family:'Oswald',sans-serif; font-size:.78rem; letter-spacing:.28em;
+  color:var(--silver); margin-bottom:24px}
+.diff-row{display:grid; grid-template-columns:1fr 40px 1fr; align-items:center; gap:20px;
+  padding:18px 0; border-bottom:1px solid var(--line); font-size:.92rem}
+.diff-row:last-child{border-bottom:none}
+.diff-bad{color:var(--mu); text-align:right; text-decoration:line-through; text-decoration-color:var(--red)}
+.diff-arr{color:var(--red); font-weight:700; text-align:center}
+.diff-good{color:var(--ink); font-weight:700}
+@media (max-width:768px){.diff-row{grid-template-columns:1fr; gap:6px; text-align:center}
+  .diff-bad,.diff-good{text-align:center}}
+
+/* ===== THREE PILLARS ===== */
+#pillars{background:var(--bg)}
+.pillars-grid{display:grid; gap:32px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.pillar{background:var(--bg2); padding-bottom:36px; border:1px solid var(--line); transition:transform .4s var(--ease)}
+.pillar:hover{transform:translateY(-6px); border-color:var(--red)}
+.pillar-img{aspect-ratio:1/1; overflow:hidden; background:#000; position:relative}
+.pillar-img img{width:100%; height:100%; object-fit:cover; filter:grayscale(.2) contrast(1.1);
+  transition:filter .6s var(--ease)}
+.pillar:hover .pillar-img img{filter:grayscale(0) contrast(1.05)}
+.pillar-img::after{content:''; position:absolute; inset:0;
+  background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,.6))}
+.pillar-num{font-family:'Oswald',sans-serif; font-size:.78rem; letter-spacing:.28em;
+  color:var(--red); padding:24px 32px 8px}
+.pillar-tag{font-family:'Oswald',sans-serif; font-size:.7rem; letter-spacing:.24em;
+  color:var(--silver); padding:0 32px 14px}
+.pillar-title{font-weight:900; font-size:1.25rem; line-height:1.5; padding:0 32px 14px}
+.pillar-text{font-size:.92rem; color:var(--mu); line-height:1.9; padding:0 32px}
+
+/* ===== VOICE ===== */
+#voice{background:var(--bg2)}
+.voice-card{padding:40px 36px; margin-bottom:24px; background:var(--bg3);
+  border-left:3px solid var(--red); position:relative}
+.voice-card::before{content:'"'; position:absolute; top:8px; right:24px;
+  font-family:'Oswald',sans-serif; font-size:5rem; color:var(--red); opacity:.2; line-height:1}
+.voice-text{font-weight:500; font-size:1rem; line-height:2; color:var(--ink); margin-bottom:18px}
+.voice-sig{font-size:.85rem; color:var(--silver); padding-top:14px; border-top:1px solid var(--line)}
+.voice-sig em{color:var(--ink); font-style:normal; font-weight:700; margin-right:10px}
+.voice-note{font-size:.78rem; color:var(--mu); margin-top:18px; font-style:italic}
+
+/* ===== CTA ===== */
+#cta{background:var(--bg); padding:140px 0 120px; position:relative; overflow:hidden}
+#cta::before{content:'JUJU'; position:absolute; top:-60px; right:-5%;
+  font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(10rem,26vw,22rem);
+  color:rgba(192,24,44,.04); line-height:.85; user-select:none}
+.cta-inner{position:relative; z-index:2; text-align:center}
+.cta-h2{font-weight:900; font-size:clamp(2rem,5.5vw,3.4rem); line-height:1.4; margin-bottom:24px}
+.cta-h2 em{color:var(--red); font-style:normal}
+.cta-sub{font-size:1rem; color:var(--silver); max-width:560px; margin:0 auto 48px; line-height:2}
+.cta-buttons{display:flex; gap:16px; justify-content:center; flex-wrap:wrap}
+.cta-note{margin-top:32px; font-size:.82rem; color:var(--mu); letter-spacing:.1em}
+
+/* ===== FOOTER ===== */
+footer{background:#050505; padding:64px 0 36px; border-top:1px solid var(--line)}
+.foot-inner{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:32px}
+.foot-brand{font-family:'Oswald',sans-serif; font-weight:700; font-size:1.4rem; letter-spacing:.18em}
+.foot-brand em{color:var(--red); font-style:normal}
+.foot-tag{font-size:.78rem; color:var(--mu); margin-top:8px; letter-spacing:.1em}
+.foot-meta{font-size:.78rem; color:var(--mu); line-height:1.9; text-align:right}
+.foot-copy{margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
+  font-family:'Oswald',sans-serif; font-size:.72rem; color:var(--mu); letter-spacing:.18em; text-align:center}
+
+/* ===== REVEAL ANIM ===== */
+.reveal{opacity:0; transform:translateY(28px); transition:all .8s var(--ease)}
+.reveal.on{opacity:1; transform:translateY(0)}
+.d1{transition-delay:.12s} .d2{transition-delay:.24s} .d3{transition-delay:.36s}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">VITA<em>SALON</em>JUJU</a>
+    <a href="#cta" class="nav-cta">FREE CONSULTATION</a>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-tag os">FOR THOSE WHO WON'T COMPROMISE</div>
+    <h1 class="hero-h1 reveal">
+      結果以外、<br>
+      <span class="line-2">いらない。</span>
+    </h1>
+    <p class="hero-sub reveal d1">
+      <strong>医療提携 × 機器販売代理店。</strong><br>
+      プロが使う機器を、プロ自身が選び、医療と連携して施術する。<br>
+      癒しのエステではない、<strong>結果コミット型の痩身道場</strong>です。
+    </p>
+    <div class="hero-meta reveal d2">
+      <span class="hero-meta-item os"><em>01</em>初回 60min</span>
+      <span class="hero-meta-item os"><em>02</em>完全無料</span>
+      <span class="hero-meta-item os"><em>03</em>勧誘ゼロ</span>
+      <span class="hero-meta-item os"><em>04</em>オンライン相談可</span>
+    </div>
+    <div class="hero-cta-group reveal d3">
+      <a class="btn-primary" href="#cta">無料診断を予約 →</a>
+      <a class="btn-secondary" href="https://www.instagram.com/vitasalon.juju/" target="_blank">DMで質問する</a>
+    </div>
+    <p class="hero-scarcity reveal d3">— <em>月8名様限定</em>／本気の方のみ対応</p>
+  </div>
+</section>
+
+<section id="empathy">
+  <div class="container">
+    <div class="sect-num os">01 — EMPATHY</div>
+    <h2 class="sect-title reveal">他のエステで、<em>結果が出なかった</em>経験はありませんか？</h2>
+    <div class="grid">
+      <div class="emp-card reveal">
+        <div class="emp-card-num os"><em>01</em>HOTPEPPER LOOP</div>
+        <h3 class="emp-card-title">比較地獄に消えた時間とお金</h3>
+        <p class="emp-card-text">「安さ」と「初回特典」で渡り歩き、毎回違うサロンへ。気づけば、自分に何が合っているかさえ分からない。</p>
+      </div>
+      <div class="emp-card reveal d1">
+        <div class="emp-card-num os"><em>02</em>HIGH-PRICE TRAP</div>
+        <h3 class="emp-card-title">押された契約、中途半端な結果</h3>
+        <p class="emp-card-text">「今日決めれば◯万円オフ」に乗ってしまい、途中でやめても返金は一部。結果も出ずに終わった。</p>
+      </div>
+      <div class="emp-card reveal d2">
+        <div class="emp-card-num os"><em>03</em>NO LOGIC</div>
+        <h3 class="emp-card-title">なんとなく機器に当たっただけ</h3>
+        <p class="emp-card-text">マシンの理屈もわからず、ただ通って、ただ施術を受ける。何が効いたのかも分からない。</p>
+      </div>
+    </div>
+    <p class="emp-quote reveal">期待を裏切られ続けて、「もう、エステはいいかな」と思った方へ。</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="sect-num os">02 — WHY JUJU</div>
+    <h2 class="sect-title reveal">福岡で稀有な、<em>二刀流</em>のポジション。</h2>
+    <div class="dual">
+      <div class="dual-card reveal">
+        <div class="dual-tag os">MEDICAL PARTNERSHIP</div>
+        <h3 class="dual-title">医療提携で<br>セーフティネットを持つ</h3>
+        <p class="dual-text">医療機関と直接連携。安全性の担保はもちろん、必要に応じて医療側からの助言を受けられる体制。</p>
+      </div>
+      <div class="dual-x os reveal d1">×</div>
+      <div class="dual-card reveal d2">
+        <div class="dual-tag os">MACHINE DISTRIBUTOR</div>
+        <h3 class="dual-title">機器販売代理店として<br>本物を選び抜く</h3>
+        <p class="dual-text">全国のサロンに痩身機器を卸す代理店だからこそ「効くマシン」と「効かないマシン」を知り尽くしている。</p>
+      </div>
+    </div>
+
+    <div class="diff reveal">
+      <div class="diff-title os">THE DIFFERENCE</div>
+      <div class="diff-row"><span class="diff-bad">広告ベースで選ばれた機器</span><span class="diff-arr os">→</span><span class="diff-good">実績ベースで選定した機器</span></div>
+      <div class="diff-row"><span class="diff-bad">マニュアル通りの施術</span><span class="diff-arr os">→</span><span class="diff-good">体質と目標に合わせた設計</span></div>
+      <div class="diff-row"><span class="diff-bad">「気持ちよさ」を売る</span><span class="diff-arr os">→</span><span class="diff-good">「結果」をコミットする</span></div>
+      <div class="diff-row"><span class="diff-bad">問題発生時は自己判断</span><span class="diff-arr os">→</span><span class="diff-good">医療連携で即相談できる</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pillars">
+  <div class="container">
+    <div class="sect-num os">03 — THREE PILLARS</div>
+    <h2 class="sect-title reveal">JuJuが選ばれる、<em>三つの柱</em>。</h2>
+    <div class="pillars-grid">
+      <div class="pillar reveal">
+        <div class="pillar-img"><img src="../assets/images/v2/pillar-discipline.jpg" alt="DISCIPLINE — 医療連携によるセーフティネット"></div>
+        <div class="pillar-num os">01 — DISCIPLINE</div>
+        <div class="pillar-tag os">MEDICAL PARTNERSHIP</div>
+        <h3 class="pillar-title">医療連携の規律</h3>
+        <p class="pillar-text">ダイエットには身体への負荷が伴う。だから医療機関との連携を選んだ。施術中の不安、肌や体調の変化、結果への疑問──そのすべてを医療の知見で支える。</p>
+      </div>
+      <div class="pillar reveal d1">
+        <div class="pillar-img"><img src="../assets/images/v2/pillar-weapon.jpg" alt="WEAPON — プロが選び抜いた本格機器"></div>
+        <div class="pillar-num os">02 — WEAPON</div>
+        <div class="pillar-tag os">MACHINE SELECTION</div>
+        <h3 class="pillar-title">プロが選んだ武器</h3>
+        <p class="pillar-text">私たちは機器販売代理店でもある。業界のあらゆるマシンを比較・評価し、卸す立場。だから「効果の薄い機器」を自店に置く理由がない。結果が出る機器だけを、根拠とともに使う。</p>
+      </div>
+      <div class="pillar reveal d2">
+        <div class="pillar-img"><img src="../assets/images/v2/pillar-protocol.jpg" alt="PROTOCOL — 個別カウンセリング × 結果コミット型"></div>
+        <div class="pillar-num os">03 — PROTOCOL</div>
+        <div class="pillar-tag os">RESULT COMMITMENT</div>
+        <h3 class="pillar-title">個別プロトコルの設計</h3>
+        <p class="pillar-text">体質、生活習慣、目標、過去のエステ歴。すべてを聞いた上で、あなただけの計画を組む。「何回で・どこまで・どの方法で」を最初に明文化する。曖昧な期待ではなく、明確な約束。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="voice">
+  <div class="container">
+    <div class="sect-num os">04 — REAL VOICES</div>
+    <h2 class="sect-title reveal">「最後の砦」に、<em>たどり着いた人たち</em>の声。</h2>
+    <div class="voice-card reveal">
+      <p class="voice-text">「いろんなサロンを渡り歩いて、もう諦めかけていました。ここで初めて『なぜ落ちなかったか』を理屈で説明されて、納得して通えました。」</p>
+      <div class="voice-sig"><em>K.S 様</em>30代・会社員</div>
+    </div>
+    <div class="voice-card reveal d1">
+      <p class="voice-text">「高額コースの契約で失敗した経験があり、最初は半信半疑。でもカウンセリングで無理な勧誘がなくて、ちゃんと向き合ってくれる感じがあって。」</p>
+      <div class="voice-sig"><em>M.A 様</em>40代・自営業</div>
+    </div>
+    <div class="voice-card reveal d2">
+      <p class="voice-text">「機器の説明をここまでしてくれるサロンは初めてでした。『自分の身体で何が起きているか』が分かると、続ける意味がはっきりします。」</p>
+      <div class="voice-sig"><em>Y.T 様</em>30代・主婦</div>
+    </div>
+    <p class="voice-note">※ 構成サンプル。本契約後、実際のお客様の声に差し替え予定。</p>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container cta-inner">
+    <div class="sect-num os" style="justify-content:center">— LAST SECTION</div>
+    <h2 class="cta-h2 reveal">「もう一度だけ」を、<em>JuJu</em>で。</h2>
+    <p class="cta-sub reveal">
+      初回カウンセリングは無料。<br>
+      機器の選定理由、医療連携の中身、あなたの身体に合うかどうか。<br>
+      まずは、納得できるまで聞いてください。
+    </p>
+    <div class="cta-buttons reveal d1">
+      <a class="btn-primary" href="https://www.instagram.com/vitasalon.juju/" target="_blank">無料診断を予約 →</a>
+      <a class="btn-secondary" href="https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E" target="_blank">Google Map</a>
+    </div>
+    <p class="cta-note">— 月8席まで／実際の空き状況は予約時にご案内 —</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-inner">
+    <div>
+      <div class="foot-brand">VITA<em>SALON</em>JUJU</div>
+      <div class="foot-tag">MEDICAL × BEAUTY — TENJIN, FUKUOKA</div>
+    </div>
+    <div class="foot-meta">
+      福岡市中央区天神（詳細はご予約時にご案内）<br>
+      Instagram DM <a href="https://www.instagram.com/vitasalon.juju/" style="color:var(--red)">@vitasalon.juju</a>
+    </div>
+  </div>
+  <div class="foot-copy">© VITA SALON JUJU — SITE BY FUKUOKA CONNECT</div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const ob=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');ob.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>ob.observe(el));
+});
+</script>
+</body>
+</html>
